@@ -41,4 +41,3 @@
 # else:
 #     conTemp = (temp-32)*(5/9)
 # print("Your input was: ", temp, " This converts to: ", conTemp)
-
