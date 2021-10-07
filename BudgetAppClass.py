@@ -1,11 +1,8 @@
 class CategoryBudget():
-    balance = 0
-    budget = 0
-    transactions = []
     def __init__(self,limit,category):
         self.budget = limit
         self.category = category
-
+        self.transactions = []
     def deposit(self,amount):
         self.transactions.append(amount)
         self.cal_balance_()
