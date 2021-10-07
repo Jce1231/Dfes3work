@@ -10,12 +10,12 @@
 
 
 # def product(n):
-#     total == 1 #Comparison statement equals
-#     for n in n: #Reused variable names
+#     total = 1 #Comparison statement equals
+#     for i in n: #Reused variable names
 #         total *= i  #i is not a variable in this code, not sure if *= works.
-# return total 
+#     return total 
 
-# print(product([4,4,5])) #Product only takes one input.
+# print(product([4,4,5]))
 
 
 
@@ -30,6 +30,16 @@
 #                 return False
 #             return True #Indentation Erorr, will return True in the loop
 
+# def is_prime(x):
+#     if x ==2 or x ==3:
+#         return True
+#     elif x<2:
+#         return False
+#     else:  
+#         for n in range(2,x-1):
+#             if x%n ==0:
+#                 return False
+#         return True
 
 
 
