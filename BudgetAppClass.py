@@ -1,5 +1,5 @@
 class CategoryBudget():
-    def __init__(self,limit,category):
+    def __init__(self,limit:float,category):
         self.budget = limit
         self.category = category
         self.transactions = []
@@ -14,8 +14,6 @@ class CategoryBudget():
     def transfer(self,amount,where):
         where.deposit(amount)
         self.withdraw(amount)
-        print(where.balance_())
-
     def cal_balance_(self):
         self.balance = 0
         for i in self.transactions:
@@ -24,9 +22,10 @@ class CategoryBudget():
     def balance_(self):
         if self.balance > self.budget:
             difference = self.balance - self.budget
-            return(f"You have exceeded your budget of {self.budget} for {self.category} by {difference} ")
+            return(f"Your balance for {self.category} is £{self.balance}, which is £{difference} more than your budget of £{self.budget}")
         else:
-            return(f"Your balance for {self.category} is {self.balance}")
+            difference = self.budget - self.balance
+            return(f"Your balance for {self.category} is £{self.balance}, which is £{difference} less than your budget of £{self.budget}")
 
     def ledger(self):
         return(self.transactions)

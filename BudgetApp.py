@@ -15,11 +15,11 @@ CategoryBudget(400,'car')
 
 
 for i in range(5):
-    budgetCategory[0].deposit(randint(-10,25)) #Food
-    budgetCategory[1].deposit(randint(-25,50)) #Clothing
-    budgetCategory[2].deposit(randint(-25,50)) #Bills
-    budgetCategory[3].deposit(randint(-10,25)) #Entertainment
-    budgetCategory[4].deposit(randint(-40,150)) #Car
+    budgetCategory[0].deposit(randint(-5,25)) #Food
+    budgetCategory[1].deposit(randint(-10,50)) #Clothing
+    budgetCategory[2].deposit(randint(-15,50)) #Bills
+    budgetCategory[3].deposit(randint(-5,25)) #Entertainment
+    budgetCategory[4].deposit(randint(-20,150)) #Car
 
 budgetCategory[0].transfer(100,budgetCategory[2])
 for i in budgetCategory:
