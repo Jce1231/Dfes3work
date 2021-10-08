@@ -53,4 +53,6 @@ class Hat():
 
 
 davethe = Hat(red=6,blue=10,puce=3)
-print(davethe.compute_probability(10))
+newList = (davethe.compute_probability(10))
+
+print(newList)
