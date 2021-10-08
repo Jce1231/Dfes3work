@@ -27,7 +27,7 @@ class Hat():
 # from the hat, 
 # 
     def grabballs(self):
-        randBalls = random.randint(0,len(self.ballBag))
+        randBalls = random.randint(1,len(self.ballBag))
         grabbedBalls = random.sample(self.ballBag, randBalls)
         probGrabber = self.ballBag.copy()
         probGrab = 1
@@ -52,7 +52,7 @@ class Hat():
         return experivar
 
 
-davethe = Hat(red=6,blue=10,puce=3)
+davethe = Hat(red=4,blue=4,puce=4)
 newList = (davethe.compute_probability(10))
 
 print(newList)
